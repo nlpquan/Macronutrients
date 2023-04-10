@@ -1,0 +1,126 @@
+﻿
+#AddFoodForm {
+    width: 100%;
+    border: 1px solid red;
+    overflow-y: auto;
+}
+
+#AllFoodsList {
+    width: 100%;
+    border: 1px solid yellow;
+    overflow-y:auto;
+}
+
+#EditFoodModal {
+    display: block;
+}
+
+#EditFoodModal label {
+    width:55px;
+}
+
+.FoodItem {
+    border-bottom:1px solid dodgerblue;
+}
+
+.FoodItem label {
+    width: 60px;
+}
+
+.FoodItem-Actions {
+    text-align:right;
+    width: 100%;
+}
+
+.FoodItem-Details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.FoodItem-Values {
+    width:100%;
+}
+
+.FoodName {
+    font-size:22px;
+}
+
+.NutrientItem:hover {
+    cursor:pointer;
+    color:dodgerblue;
+}
+
+#FoodItemsPage {
+    display:flex;
+    flex-direction:column;
+    border:1px solid dodgerblue;
+    height:90vh;
+}
+
+#FoodItemsPage-Body {
+    display:flex;
+    justify-content:space-evenly;
+    height:80%;
+    border:2px solid orange;
+}
+
+#FoodItemsPage-Body div {
+    padding:10px;
+}
+
+#FoodItemsPage-Footer {
+    height: 10%;
+    border: 2px solid green;
+    padding: 10px;
+}
+
+#FoodItemsPage-Header {
+    height:10%;
+    border:2px solid black;
+    padding:10px;
+}
+
+#ShowMacronutrients {
+    width: 100%;
+    border: 1px solid black;
+    width: 100%;
+    overflow-y: auto;
+}
+
+#ShowMacronutrients label {
+    width: 70px;
+}
+
+.spacer {
+    width:50%;
+}
+
+.YoutubeEmbed {
+    width:fit-content;
+}
+
+@media (max-width:1000px) {
+    #AddFoodForm {
+        height:90%;
+    }
+
+    #AllFoodsList {
+        max-height:335px;
+    }
+
+    #FoodItemsPage {
+        height:85%;
+    }
+
+    #FoodItemsPage-Body {
+        flex-direction: column;
+    }
+
+    #FoodItemsPage-Header, #FoodItemsPage-Footer {
+        display:none;
+    }
+
+    #ShowMacronutrients {
+        height: 90%;
+    }
+}
